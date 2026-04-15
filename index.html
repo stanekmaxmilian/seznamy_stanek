@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html lang="cs">
+<head>
+    <title>Seznamy a Tabulky</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Seznamy a tabulky</h1>
+
+<h2>Tvorba seznamů</h2>
+
+<h3>Uspořádaný seznam (ordered list)</h3>
+<ol>
+    <li>Google Chrome</li>
+    <li>Internet Explorer</li>
+    <li>Mozilla Firefox</li>
+</ol>
+
+<h3>Neuspořádaný seznam (unordered list)</h3>
+<ul>
+    <li>IP adresy (např. IPv4: 192.168.23.1, IPv6: )</li>
+    <li>DNS adresy (např. strojka.opava.cz)</li>
+    <li>URL adresy (např. http://moodle.sspu-opava.cz)</li>
+</ul>
+
+<h3>Vnořený seznam</h3>
+<ul>
+    <li>Hardware
+        <ol>
+            <li>Základní jednotka
+                <ol type="a">
+                    <li>procesor (CPU)</li>
+                    <li>paměť (RAM)</li>
+                    <li>pevný disk (HDD)</li>
+                </ol>
+            </li>
+            <li>Vstupní zařízení
+                <ol type="a">
+                    <li>klávesnice</li>
+                    <li>myš</li>
+                </ol>
+            </li>
+            <li>Výstupní zařízení
+                <ol type="a">
+                    <li>monitor</li>
+                    <li>tiskárna</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>Software
+        <ol>
+            <li>Základní programové vybavení
+                <ol type="a">
+                    <li>operační systém</li>
+                    <li>ovladač</li>
+                    <li>firmware</li>
+                </ol>
+            </li>
+            <li>Aplikace
+                <ol type="a">
+                    <li>textový editor</li>
+                    <li>prohlížeč</li>
+                    <li>antivirový program</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+</ul>
+
+<h3>Popisný seznam (description list)</h3>
+<dl>
+    <dt>Internet Society (ISOC)</dt>
+    <dd>Mezinárodní organizace pro globální koordinaci a kooperaci v rámci internetu.</dd>
+
+    <dt>World Wide Web Consortium (W3C)</dt>
+    <dd>Mezinárodní konsorcium, jehož členové vyvíjejí webové standardy pro WWW.</dd>
+</dl>
+
+<section id="tabulky">
+<h2>Tvorba tabulek</h2>
+
+<p>
+Komplexní tabulka v HTML může být tvořena záhlavím, tělem a zápatím.
+Pomocí atributů colspan a rowspan můžeme vytvořit sloučené buňky.
+</p>
+
+<table border="1">
+    <caption>Studijní obory</caption>
+
+    <thead>
+        <tr>
+            <th rowspan="2">Název oboru</th>
+            <th rowspan="2">Kód oboru</th>
+            <th rowspan="2">Počet tříd</th>
+            <th colspan="3">Počet žáků</th>
+        </tr>
+        <tr>
+            <th>Chlapci</th>
+            <th>Dívky</th>
+            <th>Celkem</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Informační technologie</td>
+            <td>18-20-M/01</td>
+            <td>4</td>
+            <td>104</td>
+            <td>1</td>
+            <td>105</td>
+        </tr>
+        <tr>
+            <td>Strojírenství</td>
+            <td>23-41-M/01</td>
+            <td>5</td>
+            <td>135</td>
+            <td>1</td>
+            <td>136</td>
+        </tr>
+        <tr>
+            <td>Umělecké obory</td>
+            <td>82-41-M/04</td>
+            <td>4</td>
+            <td>20</td>
+            <td>74</td>
+            <td>94</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="2">Celkové údaje</td>
+            <td>13 tříd</td>
+            <td colspan="3">335 žáků</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+</section>
+
+</body>
+</html>

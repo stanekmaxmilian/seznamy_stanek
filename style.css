@@ -1,0 +1,74 @@
+:root {
+    --table-border: #999;
+    --table-caption-bg: #3b3b3b;
+    --table-caption-text: #ffffff;
+    --table-text: #000;
+    --table-total: red;
+    --font-base: Arial, sans-serif;
+    --font-heading: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-base);
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    background-color: #a33;
+    color: white;
+    padding: 10px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: left;
+    width: 60%;
+    margin: 15px auto 5px auto;
+}
+
+p {
+    width: 60%;
+    margin: 10px auto;
+    text-align: left;
+}
+
+ul, ol, dl {
+    width: 60%;
+    margin: 0 auto 15px auto;
+    text-align: left;
+}
+
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid var(--table-border);
+    padding: 8px;
+}
+
+caption {
+    background-color: var(--table-caption-bg);
+    color: var(--table-caption-text);
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead {
+    background-color: #dddddd;
+}
+
+tfoot {
+    color: var(--table-total);
+    font-weight: bold;
+}
